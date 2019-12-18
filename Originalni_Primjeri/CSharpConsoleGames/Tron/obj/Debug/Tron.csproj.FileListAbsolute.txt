@@ -1,0 +1,6 @@
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\bin\Debug\Tron.exe.config
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\bin\Debug\Tron.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\bin\Debug\Tron.pdb
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\obj\Debug\Tron.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\obj\Debug\Tron.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tron\obj\Debug\Tron.pdb

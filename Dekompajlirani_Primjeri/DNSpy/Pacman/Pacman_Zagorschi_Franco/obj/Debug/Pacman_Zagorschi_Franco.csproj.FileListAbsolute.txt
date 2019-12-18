@@ -1,0 +1,6 @@
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\DNSpy\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb

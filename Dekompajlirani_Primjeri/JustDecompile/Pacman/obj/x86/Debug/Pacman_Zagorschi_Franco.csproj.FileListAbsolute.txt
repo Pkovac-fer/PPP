@@ -1,0 +1,9 @@
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.csproj.GenerateResource.cache
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\Pacman\obj\x86\Debug\Pacman_Zagorschi_Franco.pdb

@@ -1,0 +1,6 @@
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\bin\Debug\PingPong.exe.config
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\bin\Debug\PingPong.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\bin\Debug\PingPong.pdb
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\obj\Debug\PingPong.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\obj\Debug\PingPong.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\PingPong\obj\Debug\PingPong.pdb

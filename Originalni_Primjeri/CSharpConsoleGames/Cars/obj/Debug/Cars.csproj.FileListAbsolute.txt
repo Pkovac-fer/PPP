@@ -1,0 +1,13 @@
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\bin\Debug\Cars.exe.config
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\bin\Debug\Cars.exe
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\bin\Debug\Cars.pdb
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\obj\Debug\Cars.csprojAssemblyReference.cache
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\obj\Debug\Cars.csproj.CoreCompileInputs.cache
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\obj\Debug\Cars.exe
+E:\Projects for code-projects\game\CSharpConsoleGames-master\Cars\obj\Debug\Cars.pdb
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\bin\Debug\Cars.exe.config
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\bin\Debug\Cars.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\bin\Debug\Cars.pdb
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\obj\Debug\Cars.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\obj\Debug\Cars.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Cars\obj\Debug\Cars.pdb

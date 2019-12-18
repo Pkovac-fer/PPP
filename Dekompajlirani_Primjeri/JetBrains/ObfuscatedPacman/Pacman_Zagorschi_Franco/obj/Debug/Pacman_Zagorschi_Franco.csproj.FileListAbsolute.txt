@@ -1,0 +1,4 @@
+C:\Users\Petar\OneDrive\Desktop\Dekompajlirani_Primjeri\JetBrains\ObfuscatedPacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\Dekompajlirani_Primjeri\JetBrains\ObfuscatedPacman\Pacman_Zagorschi_Franco\obj\Debug\_0008 .resources
+C:\Users\Petar\OneDrive\Desktop\Dekompajlirani_Primjeri\JetBrains\ObfuscatedPacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\Petar\OneDrive\Desktop\Dekompajlirani_Primjeri\JetBrains\ObfuscatedPacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.csproj.GenerateResource.cache

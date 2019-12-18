@@ -1,0 +1,5 @@
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\SpaceInvaders\bin\Debug\SpaceInvaders.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\SpaceInvaders\bin\Debug\SpaceInvaders.pdb
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\SpaceInvaders\obj\Debug\SpaceInvaders.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\SpaceInvaders\obj\Debug\SpaceInvaders.exe
+C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\SpaceInvaders\obj\Debug\SpaceInvaders.pdb

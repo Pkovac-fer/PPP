@@ -1,0 +1,5 @@
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tetris\bin\Debug\Tetris.exe.config
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tetris\bin\Debug\Tetris.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tetris\bin\Debug\Tetris.pdb
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tetris\obj\Debug\Tetris.exe
+C:\Users\Petar\OneDrive\Desktop\C# PRIMJERI\CSharp Console Games\Tetris\obj\Debug\Tetris.pdb

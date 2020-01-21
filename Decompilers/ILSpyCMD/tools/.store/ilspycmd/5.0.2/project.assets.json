@@ -1,0 +1,117 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ilspycmd/5.0.2": {
+        "type": "package"
+      }
+    },
+    ".NETCoreApp,Version=v3.1/any": {
+      "ilspycmd/5.0.2": {
+        "type": "package",
+        "tools": {
+          "tools/netcoreapp2.1/any/DotnetToolSettings.xml": {},
+          "tools/netcoreapp2.1/any/Humanizer.dll": {},
+          "tools/netcoreapp2.1/any/ICSharpCode.Decompiler.dll": {},
+          "tools/netcoreapp2.1/any/McMaster.Extensions.CommandLineUtils.dll": {},
+          "tools/netcoreapp2.1/any/ilspycmd.deps.json": {},
+          "tools/netcoreapp2.1/any/ilspycmd.dll": {},
+          "tools/netcoreapp2.1/any/ilspycmd.pdb": {},
+          "tools/netcoreapp2.1/any/ilspycmd.runtimeconfig.json": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ilspycmd/5.0.2": {
+      "sha512": "m7w0vNQUFRerNyOri6Pkjm2sW62V6SOt0jubObLILc1LLSQxqI7/bJjeK2mi97lGlLYQR3+Uqh0JpLWSG5G1Qw==",
+      "type": "package",
+      "path": "ilspycmd/5.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ilspycmd.5.0.2.nupkg.sha512",
+        "ilspycmd.nuspec",
+        "tools/netcoreapp2.1/any/DotnetToolSettings.xml",
+        "tools/netcoreapp2.1/any/Humanizer.dll",
+        "tools/netcoreapp2.1/any/ICSharpCode.Decompiler.dll",
+        "tools/netcoreapp2.1/any/McMaster.Extensions.CommandLineUtils.dll",
+        "tools/netcoreapp2.1/any/ilspycmd.deps.json",
+        "tools/netcoreapp2.1/any/ilspycmd.dll",
+        "tools/netcoreapp2.1/any/ilspycmd.pdb",
+        "tools/netcoreapp2.1/any/ilspycmd.runtimeconfig.json"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "ilspycmd"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Petar\\.dotnet\\tools\\.store\\.stage\\rb1blsgs.2mu": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Petar\\AppData\\Local\\Temp\\zg43xq20.4g4\\restore.csproj",
+      "projectName": "restore",
+      "projectPath": "C:\\Users\\Petar\\AppData\\Local\\Temp\\zg43xq20.4g4\\restore.csproj",
+      "packagesPath": "C:\\Users\\Petar\\.dotnet\\tools\\.store\\.stage\\rb1blsgs.2mu",
+      "outputPath": "C:\\Users\\Petar\\.dotnet\\tools\\.store\\.stage\\rb1blsgs.2mu\\",
+      "projectStyle": "DotnetToolReference",
+      "configFilePaths": [
+        "C:\\Users\\Petar\\OneDrive\\Desktop\\Decompiling_PPP\\Decompilers\\ILSpy-master\\NuGet.Config",
+        "C:\\Users\\Petar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://ci.appveyor.com/nuget/ilspy-masterfeed": {},
+        "https://dotnet.myget.org/F/symreader-converter/api/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "ilspycmd": {
+            "target": "Package",
+            "version": "(, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "any": {
+        "#import": []
+      }
+    }
+  }
+}

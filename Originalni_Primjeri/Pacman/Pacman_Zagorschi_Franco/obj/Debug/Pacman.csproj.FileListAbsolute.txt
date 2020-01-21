@@ -38,3 +38,12 @@ C:\Users\Petar\OneDrive\Desktop\C#PRIMJERI\Pacman game in c#\Pacman_Zagorschi_Fr
 C:\Users\Petar\OneDrive\Desktop\C#PRIMJERI\Pacman game in c#\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
 C:\Users\Petar\OneDrive\Desktop\C#PRIMJERI\Pacman game in c#\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
 C:\Users\Petar\OneDrive\Desktop\C#PRIMJERI\Pacman game in c#\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe.config
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csprojAssemblyReference.cache
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman.csproj.GenerateResource.cache
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
+C:\Users\Petar\OneDrive\Desktop\Decompiling_PPP\Originalni_Primjeri\Pacman\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb

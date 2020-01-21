@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ilspycmd</id>
+    <version>5.0.2</version>
+    <authors>ILSpy Team</authors>
+    <owners>ILSpy Team</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/icsharpcode/ILSpy/</projectUrl>
+    <iconUrl>https://ilspy.net/images/icon32.png</iconUrl>
+    <description>Command-line decompiler using the ILSpy decompilation engine</description>
+    <copyright>Copyright 2011-2019 AlphaSierraPapa</copyright>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+    <repository url="https://github.com/icsharpcode/ILSpy/" />
+  </metadata>
+</package>

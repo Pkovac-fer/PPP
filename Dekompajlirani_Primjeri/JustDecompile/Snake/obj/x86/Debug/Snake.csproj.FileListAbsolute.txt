@@ -1,6 +1,0 @@
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\bin\Debug\Snake.exe.config
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\bin\Debug\Snake.exe
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\bin\Debug\Snake.pdb
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\obj\x86\Debug\Snake.csprojAssemblyReference.cache
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\obj\x86\Debug\Snake.exe
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JustDecompile\obj\x86\Debug\Snake.pdb

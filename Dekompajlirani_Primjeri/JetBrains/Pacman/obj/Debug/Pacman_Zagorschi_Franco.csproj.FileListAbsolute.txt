@@ -1,8 +1,0 @@
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.csprojAssemblyReference.cache
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Form1.resources
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.Properties.Resources.resources
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.csproj.GenerateResource.cache
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.exe
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\bin\Debug\Pacman_Zagorschi_Franco.pdb
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.exe
-C:\Users\Petar\OneDrive\Desktop\Dekompajliraniprogrami\JetBrains\Pacman_Zagorschi_Franco\obj\Debug\Pacman_Zagorschi_Franco.pdb

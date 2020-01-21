@@ -180,9 +180,10 @@ def process_compare(arguments):
         for fingerprint in winnowing_original:
             if fingerprint in winnowing_decompiled:
                 intersection_counter += 1;
-        result = (intersection_counter * 100) / (len(winnowing_original) + len(winnowing_decompiled));
-        print('\n{0:.3g}'.format(result) + "%");
-        result_message =  "Program nije dobro dekompajliran.\n" if result < 45 else "Program je dobro dekompajliran.\n";
+                
+        result = (len(set(winnowing_original).intersection(winnowing_decompiled)) * 2) / (len(set(winnowing_original)) +  len(set(winnowing_decompiled)))
+        print('\n{0:.3g}'.format(result * 100) + "%");
+        result_message =  "Program nije dobro dekompajliran.\n" if result < 0.45 else "Program je dobro dekompajliran.\n";
         print(result_message)
     else:
         print("Netočni argumenti")

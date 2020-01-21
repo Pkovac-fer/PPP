@@ -271,5 +271,6 @@ def shell():
         help()
     while(True):
         process(input("\nUnesi sljedeću naredbu. Upiši '-H HELP' za pomoć: ").split());
-    
-shell();
+
+if __name__ == '__main__':
+    shell();

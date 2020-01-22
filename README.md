@@ -1,6 +1,8 @@
 # PPP
 
 Skripta za rad s dekompajlerima se nalazi u datoteci Skripta/main i zove se Main.py
+
+
 Naredbe ovog programa su: -D, -C, -DA, -DQ
 
 Naredba -D (Decompile) dekompajlira jednu izvršnu datoteku i prima 2 argumenta: Dekompajler koji se koristiti (ilspy/justdecompile) i putanja do datoteke kompajliranog C# programa (.exe ili .dll).

@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 2
+
+Opis: Program a.cs ima različita imena identifikatora od programa b.cs.
+
+Očekivanje: Program a.cs i program b.cs će imati sličnost 100%
+
+Rezultat: Test Uspješan.

@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 1
+
+Opis: U programu a.cs nema dodatnog formatiranja, dok ga u programu b.cs ima. DOdatno formatiranje uključuje nepotrebne razmake i komentare. Oba se uspoređuju s programom Program.cs
+
+Očekivanje: Program a.cs i program b.cs će imati istu ocjenu kada se usporede s programom Program.cs
+
+Rezultat: Test uspješan.

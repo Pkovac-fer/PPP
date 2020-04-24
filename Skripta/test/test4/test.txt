@@ -1,0 +1,8 @@
+Broj ispitnog slučaja: 4
+
+Opis: Program a.cs sadrži cjeloviti izvorni kod. Program b.cs sadrži sve osim funkcije Initialize.
+
+Očekivanje: Pod pretpostavkom da je broj identifikatora jednoliko raspoređen, RKR-GST i Winnowing trebaju vratiti sličnost od oko 90%.
+
+Rezultat: Neuspješan za Winnowing
+

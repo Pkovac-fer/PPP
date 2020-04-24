@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 3
+
+Opis: Program a.cs sadrži 10 linija koda dok b.cs sadrži upola manje - svaku drugu liniju iz a.cs.
+
+Očekivanje: RKR-GST će dati ocjenu oko 75%, Winnowing će zbog premale duljine uzorka dati ocjenu 0.
+
+Rezultat: Neuspješan za GST

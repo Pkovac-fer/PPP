@@ -1,5 +1,6 @@
 import hashlib
 
+
 def find_min_index(fingerprints):
 	minimum = fingerprints[0]
 	min_index = 0
@@ -48,11 +49,28 @@ def create_fingerprints(tokens, k):
 	return fingerprint_arr
 
 
+def determine_window_size(original, decompiled):
+	win_size = 40
+	k = 8
+	decompiled_len = len(decompiled)
+	original_len = len(original)
+	if original_len + 1 < win_size + k:
+		win_size = int((original_len + 1) // 1.2) - 1
+	k = win_size // 5;
+	if decompiled_len + 1 < win_size + k:
+		win_size = int((decompiled_len + 1) // 1.2) - 1
+	return win_size
+
+
 def process_compare(original, decompiled):
-	decompiled_fingerprints = create_fingerprints(decompiled, 10)
-	original_fingerprints = create_fingerprints(original, 10)
-	winnowing_original = winnowing_algorithm(original_fingerprints, 40)
-	winnowing_decompiled = winnowing_algorithm(decompiled_fingerprints, 40)
+	win_size = determine_window_size(original, decompiled)
+	fingerprint_size = win_size // 5
+	if fingerprint_size < 3:
+		return 0
+	decompiled_fingerprints = create_fingerprints(decompiled, fingerprint_size)
+	original_fingerprints = create_fingerprints(original, fingerprint_size)
+	winnowing_original = winnowing_algorithm(original_fingerprints, win_size)
+	winnowing_decompiled = winnowing_algorithm(decompiled_fingerprints, win_size)
 
 	intersection_counter = 0;
 	for fingerprint in winnowing_decompiled:

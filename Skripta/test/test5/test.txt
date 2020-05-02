@@ -1,0 +1,9 @@
+Broj ispitnog slučaja: 5
+
+Opis: Program a.cs sadrži 107 linija koda, b.cs sadrži upola manje linija, svaku drugu liniju iz a.cs.
+
+Očekivanje: Winnowing će imati ocjenu od oko 90%, RKR-GST ocjenu od oko 66%.
+
+Rezultat: Prolaz
+
+Komentar: Winnowing algoritam vraća visoku ocjenu jer oba programa imaju jako sličan skup otisaka.

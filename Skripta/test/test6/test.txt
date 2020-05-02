@@ -1,0 +1,14 @@
+Broj ispitnog slučaja: 6
+
+Opis: Program a.cs sadrži 107 linija koda, b.cs sadrži svaku drugu liniju iz a.cs i dodatno 37 linija nepovezanog koda.
+
+Očekivanje: Ocjena kod oba algoritma će se smanjiti s obzirom na rezultat prijašnjeg testa.
+				Pretpostavimo 5-10% za Winnowing i 5-15% za RKR-GST.
+
+Rezultat: Prolaz
+
+Komentar: Winnowing ocjena se smanjila za 8.5% (za 0.077). RKR-GST ocjena se smanjila za 8.1% (za 0.053)
+			Razlog odabira očekivane promjene ocjene kod Winnowing algoritma je taj što se pretpostavlja da će
+			dodatni kod generirati mali broj novi otisaka.
+			Kod RKR-GST bi u savršenom slučaju ocjena bila 0.54, ali je pretpostavka da će ipak algoritam
+			spajati neke dijelove nepovezanog koda i koda iz a.cs datoteke.

@@ -1,6 +1,3 @@
-import Lexing
-
-
 # Provjeri ako je token pokriven
 def marked(tokens, index):
 	return tokens[index][0] is None
@@ -10,7 +7,7 @@ def marked(tokens, index):
 def find_next_position(index, tokens):
 	tokens_len = len(tokens)
 	for i in range(index, tokens_len):
-		if not marked(tokens, index):
+		if not marked(tokens, i):
 			return i
 	return tokens_len
 
@@ -38,11 +35,14 @@ def compute_token_ord(token):
 
 def update_hash(index, length, tokens, previous_hash):
 	base = 7 if length < 20 else 3
-	return ((previous_hash - compute_token_ord(tokens[index - 1][1]))//base) + (compute_token_ord(tokens[index + length - 1][1]) * (base ** (length - 1)))
+	base = base if length < 100 else 1
+	return (((previous_hash - compute_token_ord(tokens[index - 1][1])) // base) + (
+		compute_token_ord(tokens[index + length - 1][1]) * (base ** (length - 1))))
 
 
 def create_hash(index, length, tokens):
 	base = 7 if length < 20 else 3
+	base = base if length < 100 else 1
 	hash_val = 0
 	for i in range(index, index + length):
 		hash_val += compute_token_ord(tokens[i][1]) * (base ** (i - index))
@@ -68,7 +68,7 @@ def check_for_match(hash_val, hash_dict):
 
 
 def record_match(index_t, index_p, length, match_dict):
-	value = match_dict.get(length)
+	value = match_dict.get(str(length))
 	if value is None:
 		match_dict[str(length)] = []
 	match_dict[str(length)].append((index_t, index_p))
@@ -86,23 +86,26 @@ def scanpattern(search_len, tokens_t, tokens_p, match_dict, hash_dict):
 	global_max = 0
 	previous_hash = None
 	# Hashiranje programa T
-	for i in range(0, token_t_len):
+	i = 0
+	while i < token_t_len:
 		new_index = distance_to_next(i, search_len, tokens_t)
 		if new_index is not None:
-			i = find_next_position(new_index, tokens_t) - 1
+			i = find_next_position(new_index, tokens_t)
 			previous_hash = None
 			continue
 		else:
 			token_hash = rolling_hash(i, search_len, tokens_t, previous_hash)
 			previous_hash = token_hash
 			add_to_hashtable(i, token_hash, hash_dict)
+			i += 1
 
 	# Hashiranje programa P
 	previous_hash = None
-	for i in range(0, token_p_len):
+	i = 0
+	while i < token_p_len:
 		new_index = distance_to_next(i, search_len, tokens_p)
 		if new_index is not None:
-			i = find_next_position(new_index, tokens_p) - 1
+			i = find_next_position(new_index, tokens_p)
 			previous_hash = None
 			continue
 		else:
@@ -113,7 +116,8 @@ def scanpattern(search_len, tokens_t, tokens_p, match_dict, hash_dict):
 			if matches is not None:
 				for match in matches:
 					max_len = search_len
-					while (not out_of_bounds(match, i, max_len, tokens_t, tokens_p)) and (not marked(tokens_t, match + max_len) and (not marked(tokens_p, i + max_len))):
+					while (not out_of_bounds(match, i, max_len, tokens_t, tokens_p)) and (
+						not marked(tokens_t, match + max_len) and (not marked(tokens_p, i + max_len))):
 						first = tokens_t[match + max_len]
 						second = tokens_p[i + max_len]
 						if tokens_t[match + max_len][1] == tokens_p[i + max_len][1]:
@@ -127,6 +131,7 @@ def scanpattern(search_len, tokens_t, tokens_p, match_dict, hash_dict):
 					# Ako je ovo najduze podudaranje zabiljezi
 					if max_len > global_max:
 						global_max = max_len
+			i += 1
 	# Vrati duljinu najduljeg podudaranja
 	return global_max
 
@@ -140,7 +145,7 @@ def find_marked_parts(match, length, tokens_t, tokens_p):
 		for i in range(0, length):
 			if tokens_t[match[0] + i][0] is not None and tokens_p[match[1] + i][0] is not None:
 				start = i
-	if tokens_t[match[0] + length - 1][0] is None or tokens_p[match[1] + length - 1][1] is None:
+	if tokens_t[match[0] + length - 1][0] is None or tokens_p[match[1] + length - 1][0] is None:
 		occluded_flag = True
 		for i in range(length - 1, -1, -1):
 			if tokens_t[match[0] + i][0] is not None and tokens_p[match[1] + i][0] is not None:
@@ -155,18 +160,19 @@ def find_marked_parts(match, length, tokens_t, tokens_p):
 
 
 def replace_unmarked(match, not_occluded, match_dict):
-	record_match(match[0] + not_occluded[0], match[1] + not_occluded[0], not_occluded[1] - not_occluded[0] + 1, match_dict)
+	record_match(match[0] + not_occluded[0], match[1] + not_occluded[0],
+				 not_occluded[1] - not_occluded[0] + 1, match_dict)
 
 
 def originals_match(match, search_len, tokens_t, tokens_p):
 	for i in range(0, search_len):
-		if tokens_t[match[0] + i] != tokens_p[match[1] + i]:
+		if tokens_t[match[0] + i][1] != tokens_p[match[1] + i][1]:
 			return False
 	return True
 
 
 def markstrings(max_len, search_len, match_dict, tokens_t, tokens_p):
-	tokens_tiled = 0;
+	tokens_tiled = 0
 	for i in range(max_len, 0, -1):
 		current_matches = match_dict.get(str(i))
 		if current_matches is None:
@@ -178,11 +184,11 @@ def markstrings(max_len, search_len, match_dict, tokens_t, tokens_p):
 					if originals_match(match, search_len, tokens_t, tokens_p):
 						for j in range(0, i):
 							tokens_t[match[0] + j] = (None, tokens_t[match[0] + j][1])
-							tokens_p[match[1] + j] = (None,  tokens_p[match[1] + j][1])
+							tokens_p[match[1] + j] = (None, tokens_p[match[1] + j][1])
 						tokens_tiled += i
 				# Ako je duljina nepodudarnog dijela veca od s
 				elif not_occluded[1] - not_occluded[0] + 1 >= search_len:
-					# U match_dict stvavi nepodudarni dio
+					# U match_dict stavi nepodudarni dio
 					replace_unmarked(match, not_occluded, match_dict)
 	return tokens_tiled
 
@@ -196,23 +202,23 @@ def algorithm(initial_size, min_len, tokens_t, tokens_p):
 	search_len = initial_size
 	coverage = 0
 	while True:
-		match_dict = dict();
-		hash_dict = dict();
+		match_dict = dict()
+		hash_dict = dict()
 		max_len = scanpattern(search_len, tokens_t, tokens_p, match_dict, hash_dict)
 		if max_len > 2 * search_len:
 			search_len = max_len
 		else:
 			coverage += markstrings(max_len, search_len, match_dict, tokens_t, tokens_p)
 			if search_len > 2 * min_len:
-				search_len = search_len // 2;
+				search_len = (search_len + 1) // 2
 			elif search_len > min_len:
 				search_len = min_len
 			else:
-				print_grade(coverage, len(tokens_t), len(tokens_p))
 				break
 	return (coverage * 2) / (len(tokens_t) + len(tokens_p))
 
 
 def compare_programs(tokens_t, tokens_p):
-	return algorithm(20, 6, tokens_t, tokens_p)
-
+	if len(tokens_p) == 0 or len(tokens_t) == 0:
+		return 0
+	return algorithm(20, 5, tokens_t, tokens_p)

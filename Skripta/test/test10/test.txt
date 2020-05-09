@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 10
+
+Opis: U datoteci a.cs se nalazi nekoliko složenih uvjetnih izraza
+
+Očekivanje: ConditionalMeasure će dati ocjenu prosječne složenosti 4.167.
+
+Rezultat: Prolaz

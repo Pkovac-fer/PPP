@@ -1,0 +1,38 @@
+Broj ispitnog slučaja: 12
+
+Opis: U datoteci a.cs se jedan program. Program sadrži
+		Broj	Izraz																	Složenost
+		1.		i <= 5																	2.5
+		2.		snakeElements.Contains(food) || obstacles.Contains(food)				3
+		3.		true																	1
+		4.		Console.KeyAvailable													1
+		5.		userInput.Key == ConsoleKey.LeftArrow									2.5
+		6.		direction != right														2.5
+		7.		userInput.Key == ConsoleKey.RightArrow									2.5
+		8.		direction != left														2.5
+		9.		userInput.Key == ConsoleKey.UpArrow										2.5
+		10.		direction != down														2.5
+		11.		userInput.Key == ConsoleKey.DownArrow									2.5
+		12.		direction != up															2.5
+		13.		snakeNewHead.col < 0													2.5
+		14.		snakeNewHead.row < 0													2.5
+		15.		snakeNewHead.row >= Console.WindowHeight								2.5
+		16.		snakeNewHead.col >= Console.WindowWidth									2.5
+		17.		snakeElements.Contains(snakeNewHead) || obstacles.Contains(snakeNewHead) 3
+		18.		direction == right														2.5
+		19.		direction == left														2.5
+		20.		direction == up															2.5
+		21.		direction == down														2.5
+		22. 	snakeNewHead.col == food.col && snakeNewHead.row == food.row			6
+		23.		snakeElements.Contains(food) || obstacles.Contains(food)				3
+		24.		snakeElements.Contains(obstacle) ||
+                        obstacles.Contains(obstacle) ||
+                        (food.row != obstacle.row && food.col != obstacle.row)			10
+        25.		Environment.TickCount - lastFoodTime >= foodDissapearTime				2.5
+        26.		snakeElements.Contains(food) || obstacles.Contains(food)				3
+        ===================================================================================
+ Suma:  																				75
+
+Očekivanje: ConditionalMeasure će dati ocjenu prosječne složenosti 2.8864
+
+Rezultat: Prolaz

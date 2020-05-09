@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 11
+
+Opis: U datoteci a.cs se nalaze isti uvjetni izrazi kao i u testu 10, ali su stavljeni u if, for i while petlju.
+
+Očekivanje: ConditionalMeasure će dati ocjenu prosječne složenosti 4.167.
+
+Rezultat: Prolaz

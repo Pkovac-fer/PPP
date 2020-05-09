@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 7
+
+Opis: U datoteci a.cs se nalazi definicija jednostavnog uvjetnog izraza.
+
+Očekivanje: ConditionalMeasure će dati ocjenu prosječne složenosti 5.
+
+Rezultat: Prolaz

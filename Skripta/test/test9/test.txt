@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 9
+
+Opis: U datoteci a.cs se nalazi definicija vrlo složenog uvjetnog izraza.
+
+Očekivanje: ConditionalMeasure će dati ocjenu prosječne složenosti 10.5.
+
+Rezultat: Prolaz

@@ -78,6 +78,12 @@ def main():
 	test_grade_similarity(test_home + "test4/a.cs", test_home + "test4/b.cs", 0.9, 0.9, 4)
 	test_grade_similarity(test_home + "test5/a.cs", test_home + "test5/b.cs", 0.9, 0.66, 5)
 	test_grade_similarity_in_range(test_home + "test6/a.cs", test_home + "test6/b.cs", 0.75, 0.9, 0.46, 0.66, 6)
+	test_condition_complexity_on_file(test_home + "test7/a.cs", 5, 7)
+	test_condition_complexity_on_file(test_home + "test8/a.cs", 6.5, 8)
+	test_condition_complexity_on_file(test_home + "test9/a.cs", 10.5, 9)
+	test_condition_complexity_on_file(test_home + "test10/a.cs", 4.167, 10)
+	test_condition_complexity_on_file(test_home + "test11/a.cs", 4.167, 11)
+	test_condition_complexity_on_file(test_home + "test12/a.cs", 2.884, 12)
 
 
 if __name__ == '__main__':

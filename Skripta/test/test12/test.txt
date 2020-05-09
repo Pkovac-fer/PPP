@@ -1,6 +1,6 @@
 Broj ispitnog slučaja: 12
 
-Opis: U datoteci a.cs se jedan program. Program sadrži
+Opis: U datoteci a.cs se nalazi jedan program. Program sadrži
 		Broj	Izraz																	Složenost
 		1.		i <= 5																	2.5
 		2.		snakeElements.Contains(food) || obstacles.Contains(food)				3

@@ -25,6 +25,18 @@ def get_construct_count():
 	return q_measure.get_construct_count()
 
 
+def get_all_identifiers():
+	return q_measure.get_all_identifiers()
+
+
+def get_results():
+	results = []
+	results.extend(q_measure.get_construct_count())
+	results.append(c_measure.get_results())
+	results.extend([1])
+	return results
+
+
 def remove_imports(lines):
 	text = ""
 	for line in lines:
@@ -63,7 +75,7 @@ def rename_variable(token, last_remembered_type, type_counter, names):
 	new_name = (last_remembered_type + str(counter)).upper()
 	type_counter[last_remembered_type] = counter
 	names[str(token[1])] = str(new_name)
-	return (token[0], new_name)
+	return token[0], new_name
 
 
 def process_token(processed_tokens, token):
@@ -98,15 +110,19 @@ def process_token(processed_tokens, token):
 
 def preprocess(tokens):
 	processed_tokens = []
+	current_scope = global_scope
 	for token in tokens:
 
+		c_measure.process_token(token)
+		q_measure.process_token(token, idn_finder.get_mode(), current_scope.get_declaration(),
+								current_scope.get_in_diamond(), current_scope.get_parent)
 		idn_finder.process_token(token)
 		current_scope = idn_finder.get_scope()
-		q_measure.process_token(token, idn_finder.get_mode(), current_scope.get_declaration(), current_scope.get_in_diamond(), current_scope.get_parent)
 		process_token(processed_tokens, token)
 
 	q_measure.set_function_decls(idn_finder.function_decls.values())
 	q_measure.set_local_vars(global_scope.get_local_vars())
+	c_measure.finish_measurement()
 	return processed_tokens
 
 
@@ -127,6 +143,12 @@ def lex(filename):
 		filename,
 		"r").read())
 	tokens = process_tokens(list(pygments.lex(file, c_sharp_lexer)))
+	#print(tokens)
+	#print("Broj lokalnih: " + str(len(q_measure.local_vars)))
+	#print("Broj formalnih " + str(len(q_measure.formal_args)))
+	#print("Broj klasa " + str(len(q_measure.classes)))
+	#print("Broj članskih: " + str(len(q_measure.class_fields)))
+	#print("Broj funkcija: " + str(len(q_measure.function_decls)))
 	return tokens
 
 
@@ -137,6 +159,7 @@ def lex_without_processing(filename):
 		"r").read())
 	tokens = list(pygments.lex(file, c_sharp_lexer))
 	return tokens
+
 
 def lex_string(string):
 	c_sharp_lexer = lexers.get_lexer_by_name("csharp")

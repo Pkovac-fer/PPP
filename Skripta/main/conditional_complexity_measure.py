@@ -23,7 +23,7 @@ class ConditionalMeasure:
 		self.last_tokens = []
 
 	def process_token(self, token):
-		if (str(token[0]) == "Token.Punctuation" and str(token[1]) == ";" and not self.state == 7) or str(token[0]) == "Token.Punctuation" and str(token[1]) in ("{", "}"):
+		if (str(token[0]) == "Token.Punctuation" and str(token[1]) == ";" and not self.state == 7) or (str(token[0]) == "Token.Punctuation" and str(token[1]) in ("{", "}")):
 			self.state = 0
 			self.bracket_counter = 0
 			#if (len(self.last_tokens) > 0):
@@ -65,6 +65,8 @@ class ConditionalMeasure:
 			if token[1] in ("<", ">") and str(self.previous_token[0]) == "Token.Punctuation" and self.previous_token[1] == token[1]:
 				self.left_side = False
 				self.current_complexity -= 0.5
+			elif str(token[0]) == "Token.Punctuation" and token[1] in (":", "?"):
+				self.left_side = True
 			elif str(token[0]) == "Token.Name" or str(token[0]) == "Token.Literal.Number":
 				if self.logicals.get(token[1]) is not None:
 					self.current_complexity += 1

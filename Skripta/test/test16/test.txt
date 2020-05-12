@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 16
+
+Opis: U datoteci a.cs se nalazi jedan program. Program sadrži 2 metode, 2 razreda, 2 članske varijable, 3 formalna argumenta i 24 lokalne varijable.
+
+Očekivanje: QualityMeasure će vratiti rezultat (2, 2, 2, 3, 24)
+
+Rezultat: Prolaz

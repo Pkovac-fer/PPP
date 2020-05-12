@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 15
+
+Opis: U datoteci a.cs se nalaze miješane definicije metoda, razreda, članskih varijabli, formalnih argumenata i lokalnih varijabli
+
+Očekivanje: QualityMeasure će vratiti (br_metoda = 2, br_razreda = 1, br_članskih = 4, br_formalnih = 3, br_lokalnih = 3)
+
+Rezultat: Prolaz

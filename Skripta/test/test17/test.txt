@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 17
+
+Opis: U datoteci a.cs se nalazi isti program kao na prijašnjem testu s dodatkom, 4 break/continue naredbe i 3 labele.
+
+Očekivanje: QualityMeasure će vratiti rezultat (21, 4, 3, 24)
+
+Rezultat: Prolaz

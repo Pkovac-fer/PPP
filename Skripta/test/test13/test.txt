@@ -1,0 +1,7 @@
+Broj ispitnog slučaja: 13
+
+Opis: U datoteci a.cs se nalazi 10 lokalnih varijabli
+
+Očekivanje: Broj lokalnih varijabli koji QualityMeasure će biti jednak 10.
+
+Rezultat: Prolaz
